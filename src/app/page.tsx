@@ -1,9 +1,11 @@
+export const revalidate = 20;
+
+
 import Link from "next/link";
 
 async function getData() {
   const res = await fetch(
-    "https://645b6fe3a8f9e4d6e7686eb1.mockapi.io/api/v1/users",
-    { next: { revalidate: 1 } }
+    "https://65cc978fdd519126b83f01ba.mockapi.io/blogs",
   );
 
   if (!res.ok) {
